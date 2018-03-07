@@ -4,52 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
     <title>GIPHY App</title>
 </head>
 <body>
-    <div id="stuff">
+    <div id="newTvShow">
 
     </div>
-    <form id="tvShowForm">
-        <label for="tvShowInput">Add another TV show</label>
-        <input type="text" id="tvShowInput"><br>
+    <div id="formDiv">
+        <form id="tvShowForm">
+            <label for="tvShowInput">  Add another TV show</label><br>
+            <input type="text" id="tvShowInput"><br>
 
-        <input type="submit" value="Submit" id="addTvShow">
-    </form>
-    <div id="tvShows">
+            <input type="submit" value="Submit" id="addTvShow">
+        </form>
+    </div>
+    <div id="gif">
 
     </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-let tvShows = [""]
-let queryURL = "https://api.giphy.com/gifs/search?api_key:g1ujkhir931sWHXeqRUaOPBuJWKpvuz4" + searchTerm + ""
-let searchTerm = [""]
-
-$.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function(response) {
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
+<script type="text/javascript" src="assets/app.js"></script>
 </body>
 </html>

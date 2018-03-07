@@ -1,0 +1,48 @@
+div, form, input {
+    margin: 5px;
+}
+#addTvShow {
+    background-color: rgb(34, 36, 34);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+#newTvShow {
+    position:relative;
+
+}
+#formDiv {
+    position: ;
+    float: right;
+    top:0; 
+    right:0; 
+    width:25%;
+}
+#gif {
+    position:absolute; 
+    top:50px; 
+    left:0; 
+    width:75%
+}
+button {
+    background-color: rgb(34, 36, 34);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

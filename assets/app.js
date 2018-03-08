@@ -24,7 +24,10 @@ $( document ).ready(function() {
 				var p = $('<p>').text("Rating: " + results[i].rating);
 				var showImage = $('<img>');
                 
-                showImage.attr('src', results[i].images.fixed_height.url);
+				showImage.attr('src', results[i].images.fixed_height_still.url);
+				showImage.attr('data-still', results[i].images.fixed_height_still.url);
+				showImage.attr('data-animate', results[i].images.fixed_height.url);
+				showImage.attr('data-state', 'still');
 
                 showDiv.append(p);
                 showDiv.append(showImage);
@@ -58,6 +61,19 @@ $( document ).ready(function() {
 
 		return false;
 	})
+	$('#gif').on('click', 'img' , function(){
+		var state = $(this).attr("data-state");
+
+      	if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+		} 
+		else {
+        $(this).attr("src", $(this).attr("data-still"));
+		$(this).attr("data-state", "still");
+		}
+	})
+	
 
 	$(document).on('click', '.tvShow', showGifs);
 
